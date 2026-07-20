@@ -29,9 +29,9 @@ Se o desenvolvedor pedir uma alteracao no modelo de dados, como por exemplo  adi
 Este repositório define a interface grafica
 
 ## Impacto a Jusante (Downstream Impact)
-- Qualquer alteração ou adição de elementos na interface grafica, ou comportamento relacioado ao modelo de dados pode quebrar os contratos de:
+- Qualquer alteração ou adição de elementos na interface grafica, ou comportamento relacioado ao modelo de dados ou API pode quebrar os contratos de:
   - `backend` (API Rest)
-  - `frontend` (Visualização)
+  - `modelo` (Modelo de Dados)
 
 ## Regra de Impacto Cruzado para o Bob:
 Ao alterar um elemento visual como adicionar novos campos ou compartamento, você OBRIGATORIAMENTE deve gerar um log de alteração (Changelog/Schema Diff) e alertar o desenvolvedor: "Atenção: Esta alteração exige atualização no Modelo e no Frontend. Irei tentar propagar estas alteraçoes para os respectivos repositórios."
